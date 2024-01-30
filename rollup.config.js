@@ -9,8 +9,8 @@ export default [
         external: ['react', 'react-dom',"usehooks-ts"],
         input: 'src/index.ts', // Changed extension to .tsx
         output: {
-            file: "dist/index.js", // Change extension to .js
-            format: 'es',
+            file: 'dist/index.js',
+            format: 'cjs',
             sourcemap: devMode ? 'inline' : false,
         },
         plugins: [

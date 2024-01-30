@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useInterval} from "usehooks-ts";
 
-export function useTextTypewriter(items:string[]){
+export const useTextTypewriter = (items:string[])=>{
     const [itemsIndex, setItemsIndex] = useState(0)
     const [typingIndex, setTypingIndex] = useState(0)
     const [forward, setForward] = useState(false)
