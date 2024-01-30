@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.1.1",
   "description": "a react library that will cycle through a given list of strings, typing them out and erasing them",
-  "main": "index.ts",
+  "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
