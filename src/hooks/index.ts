@@ -1,0 +1,1 @@
+export {useTextTypewriter} from './useTextTypewriter'
