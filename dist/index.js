@@ -1,1 +1,26 @@
-import{useState as r}from'react';import{useInterval as t}from'usehooks-ts';var o=o=>{var e=r(0),a=e[0],m=e[1],n=r(0),s=n[0],h=n[1],g=r(!1),i=g[0],p=g[1],u=r('|'),f=u[0],l=u[1];return t((()=>{s>o[a].length&&i?p(!1):(0==s&&(p(!0),m((a+1)%o.length)),h(s+(i?1:-1)),l(o[a].substring(0,s)+'|'))}),75*Math.random()+100),f};export{o as useTextTypewriter};
+// src/hooks/useTextTypewriter.ts
+import { useState } from "react";
+import { useInterval } from "usehooks-ts";
+var useTextTypewriter = (items) => {
+  const [itemsIndex, setItemsIndex] = useState(0);
+  const [typingIndex, setTypingIndex] = useState(0);
+  const [forward, setForward] = useState(false);
+  const [typedText, setTypedText] = useState("|");
+  useInterval(() => {
+    if (typingIndex > items[itemsIndex].length && forward) {
+      setForward(false);
+      return;
+    } else if (typingIndex == 0) {
+      setForward(true);
+      setItemsIndex((itemsIndex + 1) % items.length);
+    }
+    setTypingIndex(typingIndex + (forward ? 1 : -1));
+    setTypedText(items[itemsIndex].substring(0, typingIndex) + "|");
+  }, Math.random() * 75 + 100);
+  return typedText;
+};
+var useTextTypewriter_default = useTextTypewriter;
+export {
+  useTextTypewriter_default as useTextTypewriter
+};
+//# sourceMappingURL=index.js.map
