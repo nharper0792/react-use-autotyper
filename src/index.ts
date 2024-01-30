@@ -1,3 +1,3 @@
-import {useTextTypewriter} from "./hooks/index.ts";
+import {useTextTypewriter} from "./hooks/index";
 
 export {useTextTypewriter};
