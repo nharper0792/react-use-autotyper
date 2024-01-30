@@ -1,5 +1,5 @@
-import {useState} from "react";
-import {useInterval} from "usehooks-ts";
+import {useState} from "react"
+import {useInterval} from "usehooks-ts"
 
 const useTextTypewriter = (items:string[])=>{
     const [itemsIndex, setItemsIndex] = useState(0)
