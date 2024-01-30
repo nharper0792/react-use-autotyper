@@ -12,6 +12,7 @@ import {useAutotyper} from 'react-use-autotyper'
 the `useAutotyper` hook takes in two parameters
 
 `items`: string[] - an array of strings to cycle through autotyping
+
 `delay`: number - (optional) ms delay between characters. Defaults to  random interval between 100-175ms
 
 # Example
