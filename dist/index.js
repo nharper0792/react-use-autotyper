@@ -12,7 +12,7 @@ function ___$insertStyle(css) {
 import { useState } from 'react';
 import { useInterval } from 'usehooks-ts';
 
-var useTextTypewriter = function (items) {
+function useTextTypewriter(items) {
     var _a = useState(0), itemsIndex = _a[0], setItemsIndex = _a[1];
     var _b = useState(0), typingIndex = _b[0], setTypingIndex = _b[1];
     var _c = useState(false), forward = _c[0], setForward = _c[1];
@@ -30,6 +30,6 @@ var useTextTypewriter = function (items) {
         setTypedText(items[itemsIndex].substring(0, typingIndex) + '|');
     }, Math.random() * 75 + 100);
     return typedText;
-};
+}
 
 export { useTextTypewriter };
