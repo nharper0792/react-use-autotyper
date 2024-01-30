@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useInterval} from "usehooks-ts";
 
-export const useTextTypewriter = (items:string[])=>{
+const useTextTypewriter = (items:string[])=>{
     const [itemsIndex, setItemsIndex] = useState(0)
     const [typingIndex, setTypingIndex] = useState(0)
     const [forward, setForward] = useState(false)
@@ -23,3 +23,5 @@ export const useTextTypewriter = (items:string[])=>{
     }, Math.random() * 75 + 100)
     return typedText
 }
+
+export default useTextTypewriter
