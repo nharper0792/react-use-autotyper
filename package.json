@@ -1,7 +1,7 @@
 {
   "name": "react-text-typewriter",
   "type": "module",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "a react library that will cycle through a given list of strings, typing them out and erasing them",
   "main": "src/index.ts",
   "scripts": {
