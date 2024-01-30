@@ -1,5 +1,5 @@
 {
-  "name": "react-use-text-typewriter",
+  "name": "react-use-autotyper",
   "type": "module",
   "version": "1.0.0",
   "description": "a react library that will cycle through a given list of strings, typing them out and erasing them",

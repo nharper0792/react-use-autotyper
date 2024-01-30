@@ -1,3 +1,3 @@
-import useTextTypewriter from "./hooks/useTextTypewriter";
+import useAutotyper from "./hooks/useAutotyper";
 
-export {useTextTypewriter};
+export {useAutotyper};

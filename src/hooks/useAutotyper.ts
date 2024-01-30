@@ -1,7 +1,7 @@
 import {useState} from "react"
 import {useInterval} from "usehooks-ts"
 
-const useTextTypewriter = (items:string[])=>{
+const useAutotyper = (items:string[],delay?:number)=>{
     const [itemsIndex, setItemsIndex] = useState(0)
     const [typingIndex, setTypingIndex] = useState(0)
     const [forward, setForward] = useState(false)
@@ -20,8 +20,8 @@ const useTextTypewriter = (items:string[])=>{
         setTypingIndex(typingIndex + (forward ? 1 : -1))
         setTypedText(items[itemsIndex].substring(0, typingIndex) + '|')
 
-    }, Math.random() * 75 + 100)
+    }, delay ?? (Math.random() * 75 + 100))
     return typedText
 }
 
-export default useTextTypewriter
+export default useAutotyper

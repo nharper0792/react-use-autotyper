@@ -1,7 +1,7 @@
-// src/hooks/useTextTypewriter.ts
+// src/hooks/useAutotyper.ts
 import { useState } from "react";
 import { useInterval } from "usehooks-ts";
-var useTextTypewriter = (items) => {
+var useAutotyper = (items, delay) => {
   const [itemsIndex, setItemsIndex] = useState(0);
   const [typingIndex, setTypingIndex] = useState(0);
   const [forward, setForward] = useState(false);
@@ -16,11 +16,11 @@ var useTextTypewriter = (items) => {
     }
     setTypingIndex(typingIndex + (forward ? 1 : -1));
     setTypedText(items[itemsIndex].substring(0, typingIndex) + "|");
-  }, Math.random() * 75 + 100);
+  }, delay ?? Math.random() * 75 + 100);
   return typedText;
 };
-var useTextTypewriter_default = useTextTypewriter;
+var useAutotyper_default = useAutotyper;
 export {
-  useTextTypewriter_default as useTextTypewriter
+  useAutotyper_default as useAutotyper
 };
 //# sourceMappingURL=index.js.map
