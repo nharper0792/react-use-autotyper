@@ -1,0 +1,39 @@
+{
+  "name": "react-text-typewriter",
+  "type": "module",
+  "version": "2.0.0",
+  "description": "a react library that will cycle through a given list of strings, typing them out and erasing them",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nharper0792/useTextTypewriter.git"
+  },
+  "keywords": [
+    "typewriter",
+    "text",
+    "cycling"
+  ],
+  "author": "Nate Harper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nharper0792/useTextTypewriter/issues"
+  },
+  "homepage": "https://github.com/nharper0792/useTextTypewriter#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-plugin-sass": "^1.12.21",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.3.3",
+    "usehooks-ts": "^2.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "rollup": "*",
+    "rollup-plugin-terser": "*"
+  }
+}
