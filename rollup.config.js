@@ -15,7 +15,7 @@ export default [
             sourcemap: devMode ? 'inline' : false,
         },
         plugins: [
-            typescript({ objectHashIgnoreUnknownHack: true }), // TypeScript plugin added first
+            typescript(), // TypeScript plugin added first
             sass({ insert: true }),
             terser({
                 ecma: 2020,
