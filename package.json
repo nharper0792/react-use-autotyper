@@ -1,7 +1,7 @@
 {
   "name": "react-use-autotyper",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "a react library that will cycle through a given list of strings, typing them out and erasing them",
   "main": "index.ts",
   "module": "./dist/index.mjs",
