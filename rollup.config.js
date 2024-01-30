@@ -7,7 +7,7 @@ console.log(`${ devMode ? 'development' : 'production' } mode bundle`);
 
 export default [
     {
-        external: ['react', 'react-dom'],
+        external: ['react', 'react-dom',"usehooks-ts"],
         input: 'src/index.ts', // Changed extension to .tsx
         output: {
             file: "dist/index.js", // Change extension to .js
